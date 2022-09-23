@@ -109,11 +109,9 @@ $ git remote add origin 주소(https://github.com/LeeJeaHyuk/commit-practice.git
 git remove -v
 
 삭제
-
 git remote rm origin
 
+
+local commit 올리기
 git push origin master
 
-
-
-origin
