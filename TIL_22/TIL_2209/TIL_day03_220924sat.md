@@ -45,5 +45,7 @@ FROM SCOTT.EMP
 WHERE DEPTNO =20;
 ```
 
-![image-20220924144359160](../../images/TIL_day03_220924sat/image-20220924144359160.png)
+![image-20220924144915656](../../images/TIL_day03_220924sat/image-20220924144915656.png)
+
+
 
