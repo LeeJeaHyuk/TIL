@@ -105,4 +105,37 @@ FROM SCOTT.EMP;
 
 ![image-20220924154619516](../../images/TIL_day03_220924sat/image-20220924154619516.png)
 
-SYSDATE에 TO_DATE를 사용해서 일자를 계산하니 예상하지 못하는 결과가 나왔다
+SYSDATE에 TO_DATE를 사용해서 일자를 계산하니 예상하지 못하는 결과가 나왔다 
+
+TO_DATE 예시
+
+```sql
+SELECT MONTHS_BETWEEN
+       (TO_DATE('02-02-1995','MM-DD-YYYY'),
+        TO_DATE('01-01-1995','MM-DD-YYYY') )
+FROM DUAL;
+```
+
+#### TO_DATE
+
+
+
+
+
+##### 1900년대 2000년대
+
+RR/MM/DD(00~49: 2000년대) , DD/MON/RR(50~99 : 1990년대)
+
+```sql
+SELECT TO_CHAR(TO_DATE('98','RR'),'YYYY') test1, 
+TO_CHAR(TO_DATE('50','RR'),'YYYY') test2, 
+TO_CHAR(TO_DATE('98','YY'),'YYYY') test3, 
+TO_CHAR(TO_DATE('05','YY'),'YYYY') test4 
+FROM  dual;
+```
+
+| test1 | test2 | test3 | test4 |
+| ----- | ----- | ----- | ----- |
+| 1998  | 1950  | 2098  | 2005  |
+
+년도 범위를 벗어나면 RR/YY로 지정하더라도 해당 년도가 된다
