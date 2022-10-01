@@ -34,7 +34,10 @@ rm 파일 지우기
 
 - rm - r 폴더 지우기 (폴더 내용 전부)
 
-![image-20220922103345704](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20220922103345704.png)
+
+![image-20221001163354111](../../images/TIL_day01/image-20221001163354111.png)
+
+
 
 상대경로와 절대경로
 
