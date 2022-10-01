@@ -8,6 +8,10 @@ start
 - start . 현재 경로의 폴더 열기
 - start TIL_day01.md 파일 열기
 
+mkdir
+
+- 파일 생성
+
 
 ls (LIST FILE)
 
