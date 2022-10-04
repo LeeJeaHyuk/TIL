@@ -26,7 +26,7 @@ MV 파일이동 / 이름변경
 
 cd 홈 폴더로 이동
 
-- cd- 이전 경로로 이동
+- **cd- 이전 경로로 이동**
 - cd . 현재 디렉토리
 - cd .. 상위 디렉토리로 이동
 
@@ -95,30 +95,32 @@ git
 
 
 
-log 
+### log 
 
-log --oneline 한줄로 로그 출력
-
-
-
-커밋 비교하기 
-
-git diff 커밋ID 커밋ID
+- log --oneline 한줄로 로그 출력
+- git log --oneline --all --graph 그래프로 출력
 
 
 
-remote
+### 커밋 비교하기 
 
-$ git remote add origin 주소(https://github.com/LeeJeaHyuk/commit-practice.git)
+- git diff 커밋ID 커밋ID
 
-확인
+### clone
 
-git remove -v
+- git clone
 
-삭제
-git remote rm origin
+### remote
 
+- $ git remote add origin 주소(https://github.com/LeeJeaHyuk/commit-practice.git)
 
-local commit 올리기
-git push origin master
+### 확인
+
+- git remove -v
+
+### 삭제
+- git remote rm origin
+
+### local commit 올리기
+- git push origin master
 

@@ -2,6 +2,15 @@
 
 ## Day 1 start (220922)
 
+1. 폴더, 파일 생성, 이동 삭제
+2. 파일 조회 , 열기
+3. 간단한 markdown 
+4. git
+   - log  ,diff
+   - clone, remote
+   - push
+5. **branch 관련 추가 요망**
+
 ## Day 2 220923
 
 ## Day 3 220924
@@ -77,4 +86,8 @@ seeborn을 사용한 titanic dataset으로 dataframe 학습
   - sort_value()
 
 ---
+
+# Day 8 220930
+
+csv파일 읽어오기
 
