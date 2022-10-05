@@ -12,7 +12,7 @@ HTML HyperText Markup Langage
 
 - 정의
   - HyperText Markup Langage로
-  - 데이터를 구조화시키는 언어
+  - 데이터를 태그로 구조화시키는 언어
 - <tag> 사이에 내용을 태그라고 한다
 - 블록 요소
 - 인라인 요소
@@ -23,6 +23,8 @@ HTML HyperText Markup Langage
   - 이미지에 링크걸기
   - 이미지 맵 사용해서 이미지에 특정 부분에 링크 걸기
 - div는 레이아웃을 나눌 때 쓰는 태그
+
+# HTML
 
 1. start
 2. title
@@ -47,12 +49,90 @@ HTML HyperText Markup Langage
     1. form을 통해 frame 제작
     2. legend를 통해  frame 제목 만들기
     3. id pw type을 잘 지정해서 입력받기
-    4. 수신 여부 등을 할 때에는 name을 같게 해서 하나만 선택되도록
+    4. name=이 key의 역할 value= 값
+       1. 위의 키와 값을 action으로 전
+       2. 수신 여부 등을 할 때에는 name을 같게 해서 하나만 선택되도록
     5. input=checkbox는 여러 개 선택할 수 있다.
     6. textarea는 string을 입력받을 수 있는 상자 제공
     7. 버튼은 button , reset , submit 으로 여러 기능을  사용 가능
 11. index
     1. a를 사용해서 각 html 예제를 모아서 볼 수있다 
 
- CSS
+#  CSS
 
+1. basic
+
+   - style p { } : 모든 p태그 안에 적용
+
+   - 경로 지정
+
+     - ```html
+        <link rel="stylesheet" href="./css/css01.css">
+       ```
+
+   - 스타일시트 3종료
+
+     - 인라인 스타일시트
+     - 내부 스타일시트
+     - 외부 스타일시트
+
+2. selector-prac
+
+   - #s-id01 {} : s-id01를 찾는다는 의미
+
+   - .class {} : 클래스는.을 붙혀서 찾는다 c
+
+   - ```css
+     * { }
+     ```
+
+     -  전체는 * 로 한다 
+
+   - 자식  #atc > p {}
+
+     1. article id가 atc인 경우에 그 하위 p 에는 적용이 되지만  div 안에 있는 p에는 적용이 되지 않는다
+
+   - 속성 선택자
+
+     - ```html
+               <p title="a">속성이 정의된</p>
+               <p title="b">태그만 선택</p>
+               <p>속성 없음</p>
+               p[title]{ }
+       ```
+
+     -    p[title]{ } 로 선택하면된다
+
+   - 가상 클래스
+
+     - ```
+       a:link{
+           color: green;
+           font-size: 20px;
+       }
+       a:visited{
+           color: hotpink;
+       }
+       /* 마우스 올려놨을때 색 바뀜 */
+       a:hover{
+           background-color: darkmagenta;
+           color: yellowgreen;
+       }
+       /* 클릭하는 순간 */
+       a:active{
+           background-color: black;
+           color: yellow;
+       }
+       input:checked{
+           width: 100px;
+           height: 100px;
+       }
+       ```
+
+     - 링크 색 / 이미 방문했을 때 / 마우스를 올려놓았을 때 / 클릭하는 순간 / 체그했을 때(체크버튼)
+
+     - 
+
+   - 
+
+     
