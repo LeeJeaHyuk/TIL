@@ -40,6 +40,9 @@ HTML HyperText Markup Langage
    1. a와 id 를 통해 원하는 줄로 이동
 6. list
    1. 순차적 / 비순차적 / 정의형 목록
+      1.  순차적 : <ol> <il>
+      2. 비순차적 : <ul> <il>
+      3. 정의 : <dl> 시작<dt>제목<dd>
 7. table
    1. table에도 head body foot이 존재
    2. rowspan="2" 로 2개 열 또는 행(colspan="2")을 병합가능
@@ -55,10 +58,15 @@ HTML HyperText Markup Langage
     5. input=checkbox는 여러 개 선택할 수 있다.
     6. textarea는 string을 입력받을 수 있는 상자 제공
     7. 버튼은 button , reset , submit 으로 여러 기능을  사용 가능
-11. index
+11. selectbox
+    1. 선택할 수 있는 box 생성
+    2. optgroup을 사용해서 목록을 지정할 수 있다
+    3. option을 통해서 선택할 내용을 적는다
+
+12. index
     1. a를 사용해서 각 html 예제를 모아서 볼 수있다 
 
-#  CSS
+#  CSS (10/5)
 
 1. basic
 
@@ -131,8 +139,56 @@ HTML HyperText Markup Langage
 
      - 링크 색 / 이미 방문했을 때 / 마우스를 올려놓았을 때 / 클릭하는 순간 / 체그했을 때(체크버튼)
 
-     - 
+3. font
 
-   - 
+   - 특정 요소만 지정하기 
+     - div > h1 { } div아래 h1을 선택해서 스타일 지정
+   - font 등록
+     - @font-face{ }
+     - src : url("./fonts/cat_ttf/Goyang.ttf") format("truetype");
 
-     
+4. box 만들기
+
+   - style을 지정할 때 태그를 여러 개 선택할 수 있다
+   - ,box를 통해 틀을 만든다
+   - .line{} 박스의 하단 테두리 지정
+
+5. 글 사이에 이미지 넣기
+
+   - img src="이미지 주소"
+   - float = left, right를 지정하면 그 쪽으로 이미지/속성이 이동한다
+
+6. clear
+
+   - float = left, right를 지정하면 지정하지 않은 글은 밀려서 써지는데 그 영향을 받지 않게 해 준다
+
+7. display
+
+   - display를 inline으로 지정하면 가로로 정렬된다
+
+8. overflow
+
+   - 내용이 넘치면 overflow된다
+   - hidden,scroll을 지정하여 보완할 수 있다
+
+9. position
+
+   - 위치가 어떻게 지정되는지
+   - z축이 있어서 어떤 게 먼저 보이는지 주의해야한다
+   - relative는 박스 왼쪽위가 기준이다
+   - absolute는 현재 위치 기준
+   - fixed는 브라우저에 위치가 고정되어있다
+
+10. border
+
+    - border-radius 끝을 깎아내는 느낌 원을 만드는 데 사용할 수 있다
+
+11. transform
+
+    - 변형 / 이동이 가능하다
+    - translate 위치 이동
+    - rotate 회전
+    - scale 크기 변화
+    - skew 비트는 느낌 (대각선으로 당긴느낌/앞뒤로 이동)
+    -  transition 이
+      - 이
